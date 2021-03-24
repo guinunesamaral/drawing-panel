@@ -1,0 +1,97 @@
+/* This VBox holds all the elements */
+
+.vbox {
+    -fx-background-color: black;
+}
+
+.btn {
+    /*-fx-border-insets: ;*/
+    -fx-pref-width: 60px;
+    -fx-border-color: black;
+    -fx-background-color: white;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: contain;
+    -fx-background-position: center;
+}
+
+.btn:hover {
+    -fx-border-color: blue;
+    -fx-border-width: 2px;
+}
+
+.toolbar {
+    -fx-alignment: center;
+    -fx-content-display: center;
+    -fx-min-width: 72px;
+}
+
+/* Simple figures */
+
+.line-btn {
+    -fx-background-image: url("../images/line.png");
+}
+
+.circle-btn {
+    -fx-background-image: url("../images/circle.jpg");
+}
+
+.rectangle-btn {
+    -fx-background-image: url("../images/rectangle.jpg");
+}
+
+.triangle-btn {
+    -fx-background-image: url("../images/triangle.png");
+    -fx-background-size: 30px;
+}
+
+.quadratic-concave-polygon {
+    -fx-background-image: url("../images/concave-quadratic-polygon.png");
+}
+
+/* Fractals */
+
+.mandelbrot-set-btn {
+    -fx-background-image: url("../images/mandelbrot-set.png");
+}
+
+.barnsley-fern-btn {
+    -fx-background-image: url("../images/barnsley-fern.jpg");
+}
+
+.sierpinski-triangle-btn {
+    -fx-background-image: url("../images/sierpinski-triangle.png");
+}
+
+/* Utilities */
+
+/*.thickness-btn {*/
+/*    -fx-max-width: 45px;*/
+/*}*/
+
+/*.color-btn {*/
+/*    -fx-max-width: 45px;*/
+/*}*/
+
+.selection-btn {
+    -fx-background-image: url("../images/selection.png");
+}
+
+.eraser-btn {
+    -fx-background-image: url("../images/eraser.jpg");
+}
+
+.hand-drag-btn {
+    -fx-background-image: url("../images/hand.png");
+}
+
+.paint-can-btn {
+    -fx-background-image: url("../images/paint-can.png");
+}
+
+.drops-account-btn {
+    -fx-background-image: url("../images/dropper2.png");
+}
+
+.text-btn {
+    -fx-background-image: url("../images/text.png");
+}

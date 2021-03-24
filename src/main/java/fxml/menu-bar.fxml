@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<MenuBar xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+         fx:controller="controllers.MenuBarController" prefHeight="25.0" prefWidth="2327.0" styleClass="menubar"
+         stylesheets="@../styles/menubar.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+    <Menu mnemonicParsing="false" text="File">
+        <MenuItem mnemonicParsing="false" text="Open"/>
+        <MenuItem mnemonicParsing="false" text="Save "/>
+        <MenuItem mnemonicParsing="false" text="Close"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Edit">
+        <MenuItem mnemonicParsing="false" text="Delete"/>
+    </Menu>
+    <Menu mnemonicParsing="false" text="Help">
+        <MenuItem mnemonicParsing="false" text="About"/>
+    </Menu>
+</MenuBar>

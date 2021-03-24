@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.collections.FXCollections?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="controllers.VBoxController" layoutY="25.0" prefHeight="675.0" prefWidth="72.0"
+      styleClass="vbox" stylesheets="@../styles/vbox.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="2255.0">
+    <cursor>
+        <Cursor fx:constant="DEFAULT"/>
+    </cursor>
+    <ToolBar accessibleHelp="Simple Figures" orientation="VERTICAL" prefHeight="207.0" prefWidth="72.0">
+        <styleClass>
+            <String fx:value="toolbar"/>
+        </styleClass>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateDrawLineMode" prefHeight="31.0" prefWidth="48.0">
+            <styleClass>
+                <String fx:value="line-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateDrawCircleMode" prefHeight="39.0" prefWidth="48.0">
+            <styleClass>
+                <String fx:value="circle-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateDrawRectangleMode" prefHeight="31.0" prefWidth="48.0">
+            <styleClass>
+                <String fx:value="rectangle-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateDrawTriangleMode" prefHeight="31.0" prefWidth="48.0">
+            <styleClass>
+                <String fx:value="triangle-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button mnemonicParsing="false" onAction="#activateDrawConcaveQuadraticPolygonMode" prefHeight="29.0">
+            <styleClass>
+                <String fx:value="quadratic-concave-polygon"/>
+                <String fx:value="btn"/>
+            </styleClass>
+        </Button>
+    </ToolBar>
+    <ToolBar orientation="VERTICAL" prefHeight="175.0" prefWidth="72.0">
+        <styleClass>
+            <String fx:value="toolbar"/>
+        </styleClass>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="46.0" prefWidth="60.0">
+            <styleClass>
+                <String fx:value="mandelbrot-set-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateDrawFractalsMode" prefHeight="46.0" prefWidth="60.0">
+            <styleClass>
+                <String fx:value="barnsley-fern-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="46.0" prefWidth="60.0">
+            <styleClass>
+                <String fx:value="sierpinski-triangle-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+    </ToolBar>
+    <ToolBar orientation="VERTICAL" prefHeight="314.0" prefWidth="72.0">
+        <styleClass>
+            <String fx:value="toolbar"/>
+        </styleClass>
+        <ChoiceBox fx:id="thicknessChoiceBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                   minWidth="-Infinity" prefHeight="27.0" prefWidth="45.0" value="1">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="1"/>
+                    <String fx:value="2"/>
+                    <String fx:value="3"/>
+                    <String fx:value="4"/>
+                    <String fx:value="5"/>
+                    <String fx:value="6"/>
+                    <String fx:value="7"/>
+                    <String fx:value="8"/>
+                    <String fx:value="9"/>
+                </FXCollections>
+            </items>
+            <styleClass>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ChoiceBox>
+        <ColorPicker fx:id="colorPicker" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="25.0" minWidth="14.0"
+                     prefHeight="27.0" prefWidth="59.0">
+            <styleClass>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </ColorPicker>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="45.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="selection-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" onAction="#activateEraserMode"
+                prefHeight="27.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="eraser-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="33.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="hand-drag-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="34.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="paint-can-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="29.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="drops-account-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+        <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                mnemonicParsing="false" prefHeight="34.0" prefWidth="45.0">
+            <styleClass>
+                <String fx:value="text-btn"/>
+                <String fx:value="btn"/>
+            </styleClass>
+            <cursor>
+                <Cursor fx:constant="HAND"/>
+            </cursor>
+        </Button>
+    </ToolBar>
+</VBox>
